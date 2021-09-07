@@ -30,7 +30,7 @@ stages:
           SourcePath: $(Build.ArtifactStagingDirectory)/Backup.zip
           azureSubscription: 'Azure Connection 1'
           Destination: 'AzureBlob'
-          storage: 'myazurestorage21_1631035368031'
+          storage: 'myazurestorage21'
           ContainerName: 'azure-devops-container'
           BlobPrefix: 'az-devops-backup'
 
