@@ -17,10 +17,10 @@ stages:
       steps:
       - task: CmdLine@2
         inputs:
-          script: git clone --mirror https://cji3slstvkjz3nfxk2skr75jaoirxn3bu7cmswfztyebxvh4ui7q@dev.azure.com/aungzi/Repo+Backup/_git/Repo+Backup
+          script: git clone --mirror https://cji3slstvkjz3nfxk2skr75jaoirxn3bu7cmswfztyebxvh4ui7q@dev.azure.com/aungzi/Repo%20Backup/_git/Repo%20Backup
       - task: ArchiveFiles@2
         inputs:
-          rootFolderOrFile: $(System.DefaultWorkingDirectory)/Repo+Backup.git
+          rootFolderOrFile: $(System.DefaultWorkingDirectory)/Repo%20Backup.git
           archiveType: zip
           archiveFile: $(Build.ArtifactStagingDirectory)/Backup.zip
           replaceExistingArchive: true
