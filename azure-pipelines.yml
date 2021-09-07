@@ -15,7 +15,7 @@ stages:
       steps:
       - task: CmdLine@2
         inputs:
-          script: git clone -mirror https://aungzi@dev.azure.com/aungzi/Repo%20Backup/_git/Repo%20Backup
+          script: git clone --mirror https://aungzi@dev.azure.com/aungzi/Repo%20Backup/_git/Repo%20Backup
       - task: ArchiveFiles@2
         inputs:
           rootFolderOrFile: $(System.DefaultWorkingDirectory)/Repo%20Backup.git
